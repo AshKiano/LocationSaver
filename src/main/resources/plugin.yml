@@ -1,0 +1,27 @@
+name: LocationSaver
+version: '${project.version}'
+main: locationsaver.locationsaver.LocationSaver
+api-version: 1.16
+authors: [ AshKiano ]
+website: https://www.ashkiano.com
+commands:
+  save:
+    description: Save your current location with a name.
+    usage: /save <name>
+    permission: locationsaver.save
+    permission-message: You do not have permission to save locations.
+  show:
+    description: Show the saved location by name.
+    usage: /show <name>
+    permission: locationsaver.show
+    permission-message: You do not have permission to show locations.
+  delete:
+    description: Delete the saved location by name.
+    usage: /delete <name>
+    permission: locationsaver.delete
+    permission-message: You do not have permission to delete locations.
+  list:
+    description: List all saved location names.
+    usage: /list
+    permission: locationsaver.list
+    permission-message: You do not have permission to list locations.
